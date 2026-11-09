@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# IDE
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
