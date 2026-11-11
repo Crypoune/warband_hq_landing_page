@@ -760,6 +760,28 @@ body.lightbox-open {
   line-height: 1.9;
 }
 
+.feature-image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.feature-image-button img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.feature-image-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
 .feature-image {
   position: relative;
   min-width: 0;

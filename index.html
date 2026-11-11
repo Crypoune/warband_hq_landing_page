@@ -1,44 +1,104 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- SEO -->
+    <title data-i18n="meta.title">
+      Warband HQ | Your Warband. Your Journey.
+    </title>
     <meta
+      content="Warband HQ &mdash; Your World of Warcraft characters, goals and progression, all in one place."
+      data-i18n="meta.description"
+      data-i18n-attr="content"
       name="description"
-      content="Warband HQ — Your World of Warcraft characters, goals and progression, all in one place."
     />
-    <title>Warband HQ | Your Warband. Your Journey.</title>
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link href="assets/icons/favicon.svg" rel="icon" type="image/svg+xml" />
+
+    <!-- Open Graph -->
+    <meta content="website" property="og:type" />
+    <meta
+      content="Warband HQ | Your Warband. Your Journey."
+      data-i18n="meta.title"
+      data-i18n-attr="content"
+      property="og:title"
+    />
+    <meta
+      content="Warband HQ &mdash; Your World of Warcraft characters, goals and progression, all in one place."
+      data-i18n="meta.description"
+      data-i18n-attr="content"
+      property="og:description"
+    />
+
+    <!-- Twitter / X Card -->
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="Warband HQ | Your Warband. Your Journey."
+      data-i18n="meta.title"
+      data-i18n-attr="content"
+      name="twitter:title"
+    />
+    <meta
+      content="Warband HQ &mdash; Your World of Warcraft characters, goals and progression, all in one place."
+      data-i18n="meta.description"
+      data-i18n-attr="content"
+      name="twitter:description"
+    />
+
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
     <header class="site-header">
       <div class="container header-content">
-        <a href="#" class="brand" aria-label="Warband HQ home">
+        <a
+          aria-label="Warband HQ home"
+          class="brand"
+          data-i18n="aria.home"
+          data-i18n-attr="aria-label"
+          href="#"
+        >
           <img
-            src="assets/icons/logo-warband_hq.webp"
             alt="logo Warband HQ"
             class="brand-logo"
+            data-i18n="image.logo.warband.hq"
+            data-i18n-attr="alt"
+            src="assets/icons/logo-warband_hq.webp"
           />
-          <span class="brand-name">WARBAND HQ</span>
+          <span class="brand-name"> WARBAND HQ </span>
         </a>
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#features">Features</a>
+        <nav
+          aria-label="Main navigation"
+          class="main-nav"
+          data-i18n="aria.main.navigation"
+          data-i18n-attr="aria-label"
+        >
+          <a data-i18n="header.a.about" href="#about"> About </a>
+          <a data-i18n="header.a.features" href="#features"> Features </a>
           <a
+            data-i18n="header.a.github"
             href="https://github.com/Crypoune/wow_project_warband_hq"
-            target="_blank"
             rel="noopener noreferrer"
-            >GitHub</a
+            target="_blank"
           >
+            GitHub
+          </a>
         </nav>
         <div class="header-actions">
           <button
-            class="language-switch"
-            type="button"
             aria-label="Change language"
+            class="language-switch"
+            data-i18n="aria.change.language"
+            data-i18n-attr="aria-label"
+            type="button"
           >
-            EN <span>|</span> FR
+            EN
+            <span data-i18n="header.span.text"> | </span>
+            FR
           </button>
         </div>
       </div>
@@ -50,192 +110,317 @@
         <div class="hero-background"></div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-          <p class="hero-eyebrow">WORLD OF WARCRAFT COMPANION</p>
-          <h1>YOUR WARBAND.<br /><span>YOUR JOURNEY.</span></h1>
-          <h2>Everything in one place.</h2>
-          <p class="hero-description">
+          <p
+            class="hero-eyebrow"
+            data-i18n="hero.hero.eyebrow.world.of.warcraft.companion"
+          >
+            WORLD OF WARCRAFT COMPANION
+          </p>
+          <h1>
+            <span data-i18n="text.text.your.warband"> YOUR WARBAND. </span>
+            <br />
+            <span data-i18n="hero.span.your.journey"> YOUR JOURNEY. </span>
+          </h1>
+          <h2 data-i18n="hero.h2.everything.in.one.place">
+            Everything in one place.
+          </h2>
+          <p
+            class="hero-description"
+            data-i18n="hero.hero.description.your.characters.your.goals.your.progression.all."
+          >
             Your characters, your goals, your progression, all gathered in one
             place.
           </p>
           <div class="hero-actions">
-            <!-- Replace this URL with the deployed application URL. -->
+            <!-- Replace URL with deployed application URL when ready. -->
             <a
-              href="YOUR_DEPLOYED_APP_URL"
               class="button button-primary"
-              target="_blank"
+              data-i18n="hero.button.button.primary.explore.warband.hq"
+              href="DEPLOYED_APP_URL"
               rel="noopener noreferrer"
-              >Explore Warband HQ</a
+              target="_blank"
             >
+              Explore Warband HQ
+            </a>
             <a
-              href="https://github.com/Crypoune/wow_project_warband_hq"
               class="button button-secondary"
-              target="_blank"
+              data-i18n="hero.button.button.secondary.view.on.github"
+              href="https://github.com/Crypoune/wow_project_warband_hq"
               rel="noopener noreferrer"
-              >View on GitHub</a
+              target="_blank"
             >
+              View on GitHub
+            </a>
           </div>
         </div>
         <a
-          href="#about"
-          class="scroll-indicator"
           aria-label="Scroll to discover"
+          class="scroll-indicator"
+          data-i18n="aria.scroll.to.discover"
+          data-i18n-attr="aria-label"
+          href="#about"
         >
-          <span>SCROLL TO DISCOVER</span
-          ><span class="scroll-arrow" aria-hidden="true">↓</span>
+          <span data-i18n="hero.span.scroll.to.discover">
+            SCROLL TO DISCOVER
+          </span>
+          <span
+            aria-hidden="true"
+            class="scroll-arrow"
+            data-i18n="hero.scroll.arrow.text"
+          >
+            &darr;
+          </span>
         </a>
       </section>
 
       <!-- About Warband HQ -->
-      <section class="about-section" id="about" aria-labelledby="about-heading">
+      <section aria-labelledby="about-heading" class="about-section" id="about">
         <div class="container about-content">
           <!-- Top row: Introduction + Application preview -->
           <div class="about-top-grid">
             <div class="about-text">
-              <p class="section-eyebrow">DISCOVER WARBAND HQ</p>
-
+              <p
+                class="section-eyebrow"
+                data-i18n="about.section.eyebrow.discover.warband.hq"
+              >
+                DISCOVER WARBAND HQ
+              </p>
               <h2 id="about-heading">
-                MORE THAN CHARACTERS.<br />
-                <span>ONE WARBAND.</span>
+                <span data-i18n="text.about.heading.more.than.characters">
+                  MORE THAN CHARACTERS.
+                </span>
+                <br />
+                <span data-i18n="about.span.one.warband"> ONE WARBAND. </span>
               </h2>
-
-              <h3>A home for all your heroes.</h3>
-
-              <p class="about-description">
+              <h3 data-i18n="about.h3.a.home.for.all.your.heroes">
+                A home for all your heroes.
+              </h3>
+              <p
+                class="about-description"
+                data-i18n="about.about.description.warband.hq.is.a.web.application.designed.to.brin"
+              >
                 Warband HQ is a web application designed to bring your World of
                 Warcraft characters and their information together in one place.
               </p>
-
-              <p class="about-description">
+              <p
+                class="about-description"
+                data-i18n="about.about.description.connect.your.battle.net.account.retrieve.your.ch"
+              >
                 Connect your Battle.net account, retrieve your characters and
                 get a clearer overview of your entire warband.
               </p>
-
               <ul class="about-highlights">
                 <li class="about-highlight">
-                  <span class="highlight-icon" aria-hidden="true">✦</span>
+                  <span
+                    aria-hidden="true"
+                    class="highlight-icon"
+                    data-i18n="about.highlight.icon.text"
+                  >
+                    ✦
+                  </span>
                   <div>
-                    <h4>Your Characters</h4>
-                    <p>All your heroes, gathered together.</p>
+                    <h4 data-i18n="about.h4.your.characters">
+                      Your Characters
+                    </h4>
+                    <p data-i18n="about.p.all.your.heroes.gathered.together">
+                      All your heroes, gathered together.
+                    </p>
                   </div>
                 </li>
-
                 <li class="about-highlight">
-                  <span class="highlight-icon" aria-hidden="true">⌖</span>
+                  <span
+                    aria-hidden="true"
+                    class="highlight-icon"
+                    data-i18n="about.highlight.icon.text.2"
+                  >
+                    &target;
+                  </span>
                   <div>
-                    <h4>Your Progression</h4>
-                    <p>Keep track of your character information.</p>
+                    <h4 data-i18n="about.h4.your.progression">
+                      Your Progression
+                    </h4>
+                    <p
+                      data-i18n="about.p.keep.track.of.your.character.information"
+                    >
+                      Keep track of your character information.
+                    </p>
                   </div>
                 </li>
-
                 <li class="about-highlight">
-                  <span class="highlight-icon" aria-hidden="true">⚑</span>
+                  <span
+                    aria-hidden="true"
+                    class="highlight-icon"
+                    data-i18n="about.highlight.icon.text.3"
+                  >
+                    ⚑
+                  </span>
                   <div>
-                    <h4>Your Organization</h4>
-                    <p>Personal goals, tasks and notes.</p>
+                    <h4 data-i18n="about.h4.your.organization">
+                      Your Organization
+                    </h4>
+                    <p data-i18n="about.p.personal.goals.tasks.and.notes">
+                      Personal goals, tasks and notes.
+                    </p>
                   </div>
                 </li>
               </ul>
             </div>
-
             <!-- Application preview -->
             <figure class="about-preview">
               <div class="preview-frame">
                 <div class="preview-header">
-                  <span class="preview-dot" aria-hidden="true"></span>
-                  <span class="preview-label">
+                  <span aria-hidden="true" class="preview-dot"> </span>
+                  <span
+                    class="preview-label"
+                    data-i18n="about.preview.label.warband.hq.application.preview"
+                  >
                     WARBAND HQ - APPLICATION PREVIEW
                   </span>
                 </div>
-
                 <button
-                  class="preview-image-button"
-                  type="button"
                   aria-label="Enlarge Warband HQ application screenshot"
+                  class="preview-image-button"
+                  data-i18n="aria.enlarge.warband.hq.application.screenshot"
+                  data-i18n-attr="aria-label"
+                  type="button"
                 >
                   <img
-                    src="assets/images/about-warband.webp"
                     alt="Warband HQ application showing the player's World of Warcraft character collection"
                     class="preview-image"
+                    data-i18n="image.warband.hq.application.showing.the.player.s.world.of.warcraft.character.collection"
+                    data-i18n-attr="alt"
+                    src="assets/images/about-warband.webp"
                   />
                 </button>
               </div>
-
-              <figcaption class="preview-caption">
+              <figcaption
+                class="preview-caption"
+                data-i18n="about.preview.caption.your.warband.your.adventure"
+              >
                 YOUR WARBAND. YOUR ADVENTURE.
               </figcaption>
             </figure>
           </div>
-
           <!-- Second row: Personal story + Timeline -->
           <div class="about-details-grid">
             <!-- The Story Behind Warband HQ -->
             <div class="about-story">
-              <p class="section-eyebrow">THE STORY BEHIND THE PROJECT</p>
-              <h3>From a Spreadsheet to a Warband HQ.</h3>
-
-              <p class="about-description">
+              <p
+                class="section-eyebrow"
+                data-i18n="about.section.eyebrow.the.story.behind.the.project"
+              >
+                THE STORY BEHIND THE PROJECT
+              </p>
+              <h3 data-i18n="about.h3.from.a.spreadsheet.to.a.warband.hq">
+                From a Spreadsheet to a Warband HQ.
+              </h3>
+              <p
+                class="about-description"
+                data-i18n="about.about.description.warband.hq.started.a.few.years.ago.with.a.simple"
+              >
                 Warband HQ started a few years ago with a simple Google Sheets
                 spreadsheet. As a World of Warcraft player, I wanted a
                 convenient way to track the progression of my characters. I
                 built a spreadsheet connected to the Blizzard API using OAuth
                 2.0, allowing me to retrieve and organize character information.
               </p>
-
-              <p class="about-description">
+              <p
+                class="about-description"
+                data-i18n="about.about.description.over.time.i.started.sharing.my.work.with.friends"
+              >
                 Over time, I started sharing my work with friends from the game,
                 as well as my brother and his wife, who also play World of
                 Warcraft with me. Seeing that other players enjoyed using it
                 made me realize that this little personal project could become
                 something more.
               </p>
-
-              <p class="about-description">
+              <p
+                class="about-description"
+                data-i18n="about.about.description.so.i.started.thinking.why.not.turn.it.into.a.web"
+              >
                 So I started thinking: why not turn it into a website? A web
                 application would allow me to go beyond what a spreadsheet could
                 offer, introducing new features and making character progression
                 easier to manage and organize.
               </p>
-
               <p class="about-description">
-                And that's how <strong>Warband HQ</strong> was born: a personal
-                project that grew from a simple spreadsheet into a dedicated
-                companion for World of Warcraft players.
+                <span data-i18n="text.text.and.that.s.how">
+                  And that's how
+                </span>
+                <strong> Warband HQ </strong>
+                <span
+                  data-i18n="text.text.was.born.a.personal.project.that.grew.from.a.sim"
+                >
+                  was born: a personal project that grew from a simple
+                  spreadsheet into a dedicated companion for World of Warcraft
+                  players.
+                </span>
               </p>
             </div>
-
             <!-- Project Timeline -->
             <div class="about-timeline">
-              <p class="section-eyebrow">THE JOURNEY</p>
-              <h3>From an Idea to a Project.</h3>
-
+              <p
+                class="section-eyebrow"
+                data-i18n="about.section.eyebrow.the.journey"
+              >
+                THE JOURNEY
+              </p>
+              <h3 data-i18n="about.h3.from.an.idea.to.a.project">
+                From an Idea to a Project.
+              </h3>
               <ol class="timeline-list">
                 <li class="timeline-item">
-                  <span class="timeline-marker">01</span>
+                  <span
+                    class="timeline-marker"
+                    data-i18n="about.timeline.marker.01"
+                  >
+                    01
+                  </span>
                   <div class="timeline-content">
-                    <h4>The Beginning - Google Sheets</h4>
-                    <p>
+                    <h4 data-i18n="about.h4.the.beginning.google.sheets">
+                      The Beginning - Google Sheets
+                    </h4>
+                    <p
+                      data-i18n="about.p.a.personal.spreadsheet.connected.to.the.blizzard"
+                    >
                       A personal spreadsheet connected to the Blizzard API to
                       track my World of Warcraft characters.
                     </p>
                   </div>
                 </li>
-
                 <li class="timeline-item">
-                  <span class="timeline-marker">02</span>
+                  <span
+                    class="timeline-marker"
+                    data-i18n="about.timeline.marker.02"
+                  >
+                    02
+                  </span>
                   <div class="timeline-content">
-                    <h4>Sharing the Idea</h4>
-                    <p>
+                    <h4 data-i18n="about.h4.sharing.the.idea">
+                      Sharing the Idea
+                    </h4>
+                    <p
+                      data-i18n="about.p.sharing.the.spreadsheet.with.friends.and.family."
+                    >
                       Sharing the spreadsheet with friends and family, and
                       realizing it could become something more.
                     </p>
                   </div>
                 </li>
-
                 <li class="timeline-item">
-                  <span class="timeline-marker">03</span>
+                  <span
+                    class="timeline-marker"
+                    data-i18n="about.timeline.marker.03"
+                  >
+                    03
+                  </span>
                   <div class="timeline-content">
-                    <h4>Warband HQ - The Web Application</h4>
-                    <p>
+                    <h4 data-i18n="about.h4.warband.hq.the.web.application">
+                      Warband HQ - The Web Application
+                    </h4>
+                    <p
+                      data-i18n="about.p.turning.the.original.idea.into.a.web.application"
+                    >
                       Turning the original idea into a web application with
                       features that go beyond the possibilities of a
                       spreadsheet.
@@ -245,18 +430,24 @@
               </ol>
             </div>
           </div>
-
           <!-- Holberton Portfolio Project -->
           <div class="about-academic">
             <p>
-              Warband HQ is a Portfolio Project developed as part of the
-              curriculum at
+              <span
+                data-i18n="text.text.warband.hq.is.a.portfolio.project.developed.as.p"
+              >
+                Warband HQ is a Portfolio Project developed as part of the
+                curriculum at
+              </span>
               <a
+                data-i18n="about.a.holberton.school"
                 href="https://www.holbertonschool.com/"
-                target="_blank"
                 rel="noopener noreferrer"
-                >Holberton School</a
-              >.
+                target="_blank"
+              >
+                Holberton School
+              </a>
+              <span data-i18n="text.text.text"> . </span>
             </p>
           </div>
         </div>
@@ -264,89 +455,182 @@
 
       <!-- Features -->
       <section
+        aria-labelledby="features-heading"
         class="features-section"
         id="features"
-        aria-labelledby="features-heading"
       >
         <div class="container features-content">
           <div class="features-heading">
-            <p class="section-eyebrow">EXPLORE THE FEATURES</p>
+            <p
+              class="section-eyebrow"
+              data-i18n="features.section.eyebrow.explore.the.features"
+            >
+              EXPLORE THE FEATURES
+            </p>
             <h2 id="features-heading">
-              EVERYTHING YOUR <span>WARBAND NEEDS.</span>
+              <span data-i18n="text.features.heading.everything.your">
+                EVERYTHING YOUR
+              </span>
+              <span data-i18n="features.span.warband.needs">
+                WARBAND NEEDS.
+              </span>
             </h2>
-            <p class="features-intro">
+            <p
+              class="features-intro"
+              data-i18n="features.features.intro.discover.the.tools.that.help.you.manage.your.cha"
+            >
               Discover the tools that help you manage your characters, follow
               their progression and organize your adventures.
             </p>
           </div>
-
           <div class="feature-list">
             <!-- Feature 1 -->
             <article class="feature-row">
               <div class="feature-text">
-                <p class="feature-number">01 / YOUR COLLECTION</p>
-                <h3>Character Management</h3>
-                <h4>Your entire warband, in one place.</h4>
-                <p>
+                <p
+                  class="feature-number"
+                  data-i18n="features.feature.number.01.your.collection"
+                >
+                  01 / YOUR COLLECTION
+                </p>
+                <h3 data-i18n="features.h3.character.management">
+                  Character Management
+                </h3>
+                <h4 data-i18n="features.h4.your.entire.warband.in.one.place">
+                  Your entire warband, in one place.
+                </h4>
+                <p
+                  data-i18n="features.p.bring.all.your.world.of.warcraft.characters.toge"
+                >
                   Bring all your World of Warcraft characters together and
                   browse your roster from a single, clear overview.
                 </p>
               </div>
               <figure class="feature-image">
-                <img
-                  src="assets/images/feature-characters.webp"
-                  alt="Warband HQ character collection showing the player's roster"
-                  loading="lazy"
-                />
-                <figcaption>YOUR CHARACTERS, AT A GLANCE.</figcaption>
+                <button
+                  aria-label="Enlarge character collection screenshot"
+                  class="feature-image-button"
+                  data-i18n="aria.enlarge.character.collection.screenshot"
+                  data-i18n-attr="aria-label"
+                  type="button"
+                >
+                  <img
+                    alt="Warband HQ character collection showing the player's roster"
+                    data-i18n="image.warband.hq.character.collection.showing.the.player.s.roster"
+                    data-i18n-attr="alt"
+                    loading="lazy"
+                    src="assets/images/feature-characters.webp"
+                  />
+                </button>
+                <figcaption
+                  data-i18n="features.figcaption.your.characters.at.a.glance"
+                >
+                  YOUR CHARACTERS, AT A GLANCE.
+                </figcaption>
               </figure>
             </article>
 
             <!-- Feature 2 -->
             <article class="feature-row feature-row-reverse">
               <div class="feature-text">
-                <p class="feature-number">02 / CHARACTER DETAILS</p>
-                <h3>Progression Tracking</h3>
-                <h4>Get a clearer view of every character.</h4>
-                <p>
+                <p
+                  class="feature-number"
+                  data-i18n="features.feature.number.02.character.details"
+                >
+                  02 / CHARACTER DETAILS
+                </p>
+                <h3 data-i18n="features.h3.progression.tracking">
+                  Progression Tracking
+                </h3>
+                <h4
+                  data-i18n="features.h4.get.a.clearer.view.of.every.character"
+                >
+                  Get a clearer view of every character.
+                </h4>
+                <p
+                  data-i18n="features.p.access.useful.character.information.review.equip"
+                >
                   Access useful character information, review equipment and keep
                   personal notes to follow each hero's journey.
                 </p>
               </div>
               <figure class="feature-image">
-                <img
-                  src="assets/images/feature-progression.webp"
-                  alt="Warband HQ character profile showing equipment, tags and personal notes"
-                  loading="lazy"
-                />
-                <figcaption>EVERY HERO HAS A STORY.</figcaption>
+                <button
+                  aria-label="Enlarge progression screenshot"
+                  class="feature-image-button"
+                  data-i18n="aria.enlarge.progression.screenshot"
+                  data-i18n-attr="aria-label"
+                  type="button"
+                >
+                  <img
+                    alt="Warband HQ character profile showing equipment, tags and personal notes"
+                    data-i18n="image.warband.hq.character.profile.showing.equipment.tags.and.personal.notes"
+                    data-i18n-attr="alt"
+                    loading="lazy"
+                    src="assets/images/feature-progression.webp"
+                  />
+                </button>
+                <figcaption
+                  data-i18n="features.figcaption.every.hero.has.a.story"
+                >
+                  EVERY HERO HAS A STORY.
+                </figcaption>
               </figure>
             </article>
 
             <!-- Feature 3 -->
             <article class="feature-row">
               <div class="feature-text">
-                <p class="feature-number">03 / YOUR OBJECTIVES</p>
-                <h3>Personal Goals &amp; Organization</h3>
-                <h4>Your goals. Your priorities. Your journey.</h4>
-                <p>
+                <p
+                  class="feature-number"
+                  data-i18n="features.feature.number.03.your.objectives"
+                >
+                  03 / YOUR OBJECTIVES
+                </p>
+                <h3 data-i18n="features.h3.personal.goals.organization">
+                  Personal Goals &amp; Organization
+                </h3>
+                <h4
+                  data-i18n="features.h4.your.goals.your.priorities.your.journey"
+                >
+                  Your goals. Your priorities. Your journey.
+                </h4>
+                <p
+                  data-i18n="features.p.create.personal.objectives.for.a.character.or.yo"
+                >
                   Create personal objectives for a character or your entire
                   warband, organize them into tasks and follow your progress
                   along the way.
                 </p>
               </div>
               <figure class="feature-image">
-                <img
-                  src="assets/images/feature-goals.webp"
-                  alt="Warband HQ goals dashboard showing character and warband objectives with their tasks"
-                  loading="lazy"
-                />
-                <figcaption>MAKE EVERY OBJECTIVE COUNT.</figcaption>
+                <button
+                  aria-label="Enlarge goals screenshot"
+                  class="feature-image-button"
+                  data-i18n="aria.enlarge.goals.screenshot"
+                  data-i18n-attr="aria-label"
+                  type="button"
+                >
+                  <img
+                    alt="Warband HQ goals dashboard showing character and warband objectives with their tasks"
+                    data-i18n="image.warband.hq.goals.dashboard.showing.character.and.warband.objectives.with.their.tasks"
+                    data-i18n-attr="alt"
+                    loading="lazy"
+                    src="assets/images/feature-goals.webp"
+                  />
+                </button>
+                <figcaption
+                  data-i18n="features.figcaption.make.every.objective.count"
+                >
+                  MAKE EVERY OBJECTIVE COUNT.
+                </figcaption>
               </figure>
             </article>
           </div>
-
-          <p class="features-footer">
+          <p
+            class="features-footer"
+            data-i18n="features.features.footer.your.characters.your.rules.your.adventure"
+          >
             YOUR CHARACTERS. YOUR RULES. YOUR ADVENTURE.
           </p>
         </div>
@@ -354,20 +638,31 @@
 
       <!-- Application screenshot lightbox -->
       <div
+        aria-hidden="true"
+        aria-label="Enlarged Warband HQ screenshot"
+        aria-modal="true"
         class="lightbox"
+        data-i18n="aria.enlarged.warband.hq.screenshot"
+        data-i18n-attr="aria-label"
         id="screenshot-lightbox"
         role="dialog"
-        aria-modal="true"
-        aria-label="Warband HQ application screenshot"
-        aria-hidden="true"
       >
-        <button class="lightbox-close" type="button" aria-label="Close image">
+        <button
+          aria-label="Close image"
+          class="lightbox-close"
+          data-i18n="aria.close.image"
+          data-i18n-attr="aria-label"
+          type="button"
+        >
           &times;
         </button>
         <img
-          src="assets/images/about-warband.webp"
-          alt="Warband HQ application — My Warband"
+          alt="Warband HQ application - My Warband"
           class="lightbox-image"
+          data-i18n="image.warband.hq.application.my.warband"
+          data-i18n-attr="alt"
+          id="lightbox-image"
+          src="assets/images/about-warband.webp"
         />
       </div>
     </main>
@@ -375,56 +670,73 @@
     <!-- Footer -->
     <footer class="site-footer">
       <div class="container footer-content">
-        <a href="#about" class="footer-brand">WARBAND HQ</a>
-
+        <a class="footer-brand" href="#about"> WARBAND HQ </a>
         <div class="footer-social-links">
           <a
             href="https://www.linkedin.com/in/arnaud-messenet/"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
-            <img src="assets/icons/linkedin.png" alt="linkedin logo" />
-            <span>LinkedIn</span>
+            <img
+              alt="linkedin logo"
+              data-i18n="image.linkedin.logo"
+              data-i18n-attr="alt"
+              src="assets/icons/linkedin.png"
+            />
+            <span data-i18n="footer.span.linkedin"> LinkedIn </span>
           </a>
-
           <a
             href="https://github.com/Crypoune"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
-            <img src="assets/icons/github.png" alt="github logo" />
-            <span>GitHub</span>
+            <img
+              alt="github logo"
+              data-i18n="image.github.logo"
+              data-i18n-attr="alt"
+              src="assets/icons/github.png"
+            />
+            <span data-i18n="footer.span.github"> GitHub </span>
           </a>
-
           <a
             href="https://discord.gg/j5BwauDgu8"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
-            <img src="assets/icons/discord.png" alt="discord logo" />
-            <span>Discord</span>
+            <img
+              alt="discord logo"
+              data-i18n="image.discord.logo"
+              data-i18n-attr="alt"
+              src="assets/icons/discord.png"
+            />
+            <span data-i18n="footer.span.discord"> Discord </span>
           </a>
         </div>
-
         <p>
-          A Portfolio Project for
+          <span data-i18n="text.text.a.portfolio.project.for">
+            A Portfolio Project for
+          </span>
           <a
+            data-i18n="footer.a.holberton.school"
             href="https://www.holbertonschool.com/"
-            target="_blank"
             rel="noopener noreferrer"
-            >Holberton School</a
+            target="_blank"
           >
+            Holberton School
+          </a>
         </p>
-
         <a
+          data-i18n="footer.a.view.the.source.code.on.github"
           href="https://github.com/Crypoune/wow_project_warband_hq"
-          target="_blank"
           rel="noopener noreferrer"
-          >View the source code on GitHub</a
+          target="_blank"
         >
+          View the source code on GitHub
+        </a>
       </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
