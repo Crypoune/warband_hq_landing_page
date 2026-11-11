@@ -141,7 +141,7 @@ button:focus-visible {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("../assets/images/hero-background.png");
+  background-image: url("../assets/images/hero-background.webp");
   background-size: cover;
   background-position: center 55%;
   transform: scale(1.02);
